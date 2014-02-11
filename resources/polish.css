@@ -1,0 +1,230 @@
+/**
+  * The polish.css files contains all
+  * design information about a project.
+  * It can be adjusted for specific devices
+  * or device groups by putting it in the 
+  * appropriate sub-folder.
+  */
+
+/**
+  * the colors which are defined in
+  * the colors section can later be referenced.
+  * This makes changes easy, since the color
+  * just needs to be changed in one position.
+  * Even default colors (like blue, green, lime, etc)
+  * can be changed here. 
+  */
+
+
+menu{
+    menubar-color: #ffffff;
+    //#if polish.MenuBar.Position != right && polish.MenuBar.Position != invisible
+    view-type: slide-up;
+    //#endif
+
+}
+leftcommand {
+    padding: 2;
+    padding-left: 4;
+    padding-right: 4;
+    background-color: #ffffff;
+    padding-bottom: 0;
+
+
+
+}
+rightcommand {
+    padding: 2;
+    padding-left: 4;
+    padding-right: 4;
+    padding-horizontal: 4;
+    padding-bottom: 0;
+
+
+}
+textField{
+    background-color: #FF6FFF;
+
+}
+textbox{
+    background-color: white;
+    font-color: #339900;
+
+    /*font-family: sans-serif;*/
+}
+form{
+    /*background-type : round-rect;*/
+    background-color: #339900;
+    /* font-family: sans-serif;*/
+    /*  font-color:lime;
+      font-style: italic;*/
+    /*background-image: url(splashscreen.png);*/
+    background-anchor: center;
+    /*margin-top:20px;*/
+    menubar-color:#FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*layout : tabbedForm*/
+}
+button{
+    background-color: #ffffff;
+    focused-style: listfocus;
+    background-color: #ffffff;
+
+    border-top:  10px;
+    border-color: #ffffff;
+    font-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    layout:center;  /*  padding-top: 10px;*/
+    width: 100%
+
+}
+list{
+    /* margin-top:20px;*/
+
+    /*  padding-top: 50px;*/
+    /*background-image:url(icon.png);*/ 
+    background-color:  #339900;
+    layout:center;
+}
+listitem{
+    /* margin-top: 15px; */
+    /* margin: 20px;*/
+    /* border-top: 5px;*/
+    font-color: #000000;
+    padding-top: 10px;
+    focused-style: listfocus;
+    layout: center;
+    /*     background-image: url(b.png);*/
+
+    /*padding: 20px;*/
+}
+
+.listfocus{
+    background-color: #ffffff;
+    font-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    layout:center;  /*  padding-top: 10px;*/
+    width: 100%
+
+
+
+}
+.menulist{
+
+    background-color: #ffffff;
+    padding-top: 100px;
+
+    background-color: green;
+    border-top: 100px;
+    font-color: yellow;
+}
+/*alert{
+    background-color: #339900
+    
+}*/
+title{
+    background-color: white;
+    width: 100%;
+    layout: center|expand;
+}
+.infoAlert{
+    /*before:url(icon.png);*/ 
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+    margin-left: 20px;
+    margin-right: 20px;
+    layout: horizontal-center | vertical-center | vertical-shrink;
+    font-size: large; 
+    font-style: italic;
+    font-color: #fff; 
+    text-wrap: true; 
+    repaint-previous-screen: true; 
+    background-color:#fff; 
+    border-type: round-rect;
+    border-color:black;
+    border-arc:10;
+    border-width:2;
+    /*background-arc: 20;*/
+}
+alertcontent {
+    /* before:url(icon.png);*/ 
+    font-color: #000; 
+}
+.hereselect{
+    title-style: heretitle;
+
+}
+
+.heretitle{
+    font-color:#339900;
+    layout:center;
+    font-style: italic;
+
+    background {
+    /*type: vertical-gradient;
+    
+    top-color: #ffffffff;
+    bottom-color: #ccc;*/         
+}      
+}
+
+.tabbedForm {
+    padding: 4;
+    layout: hcenter | vcenter;
+    background {
+    type: vertical-gradient;
+    top-color: screenBgColor;
+    bottom-color: screenBgBottomColor;
+    start: 10%;
+    end: 80%;
+    top: title;
+    bottom: menubar;
+}
+/* not supported because we use the extended menu bar:
+menubar-color: menubarColor;
+*/
+/*scrollindicator-up-image: url( arrowU.png );
+scrollindicator-down-image: url( arrowD.png );*/
+title-style:solidTitle;
+}
+
+tabbar {
+    background-color: white;
+    layout: expand;
+    padding-bottom: 0;
+    /*tabbar-left-arrow: url( left.png );
+    tabbar-right-arrow: url( right.png );*/
+    tabbar-arrow-y-offset: 3;
+    tabbar-roundtrip: true;
+    /* not supported, since we use arrow images:
+    tabbar-scrolling-indicator-color: COLOR_FOREGROUND;
+    */
+}
+
+activetab {
+    padding: 3;
+    padding-left: 10;
+    padding-right: 8;
+    padding-top: 7;
+    background-type: round-tab;
+    background-color: white;
+    background-arc: 8;
+    font-color: black;
+    font-style: bold;
+}
+
+inactivetab {
+    margin-left: 2;
+    margin-right: 2;
+    margin-bottom: 1;
+    padding: 3;
+    padding-left: 6;
+    padding-right: 4;
+    background-type: round-tab;
+    background-color: black;
+    background-arc: 8;
+    font-color: gray;
+}

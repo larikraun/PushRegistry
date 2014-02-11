@@ -1,0 +1,10 @@
+JSON format for Mobile Hook 
+http://107.20.244.125/mapi/?to=2348085867735&from=32050&text=%7D&coding=0&priority=3&udh=%06%05%04%19%9B%19%9B
+
+{"message":"Download Eminado","receiver":"6580","code":"200783","tune_name":"still testing"}
+essage
+receuver
+code
+
+
+%7B%22message%22%3A%20%22Download%20Eminado%22%2C%22receiver%22%3A%226580%22%2C%22code%22%3A%220078341%22%2C%22tune_name%22%3A%22Testing%20Eminado%22

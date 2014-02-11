@@ -1,0 +1,2 @@
+This folder contains a different design for the sample application.
+Call the "barbie" target to view this design.
